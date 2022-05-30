@@ -1,0 +1,168 @@
+/* a font-family vai definir  a fonte usada nos elementos, colocamos várias fontes para caso o navegador usado não suporte a primeira, tente aplicar a segunda fonte e assim sucessivamente*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*a propriedade display vai criar um bloco com elementos, a flex-wrap torna os elementos flexíveis quebrando em multíplas linhas, o max-width vai definir a largura máxima*/
+.center{
+    display:flex;
+    flex-wrap:wrap;
+    max-width:1200px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+/* overflow vai dizer como, e quando, um tipo de bloco de texto vai ser cortado, o valor hidden diz que o conteúdo que excede os eixos x e y vão ser cortados*/
+html, body{
+    height:100%;
+    overflow-y:hidden;
+    overflow-x:hidden;
+}
+
+header{
+    height: 200px;
+    padding:20px 0;
+    background-color: bisque;
+}
+
+.logo{
+width: 50%;
+}
+
+.logo img{
+    padding-bottom: 10px;
+width: 250px;
+height: 160px;
+transition: all 1s
+}
+
+.logo img:hover{
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+/*o text-align vai cuidar da orientação do texto, nesse caso, o alinhamento fica a direita*/
+.menu{
+    padding-top:30px;
+     width:50%;
+    text-align:right;
+}
+/*text decoration define a decoração do site, o valor none diz que o texto não vai ter decoração*/
+/*Define o quanto o texto vai ser grosso ou fino*/
+.menu a{
+color:black;
+text-decoration:none;
+font-weight:bold;
+margin-right:15px;
+}
+
+section.sobre {
+    height: calc(100%-200px);
+    position: relative;
+}
+
+/**/
+.extras{
+    position:absolute;
+    border-radius: 50%;
+    top: 0px;
+    right:-510px;
+    width: 950px;
+    height: 925px;
+    background-color:#884dc0;
+}
+.extras img{
+    position:absolute;
+    top: 95px;
+    left: 70px;
+width: 350px;
+height: 375px;
+}
+
+.social-media {
+    position:absolute;
+    right: 510px;
+    top: 200px;
+}
+
+.social-media img{
+    display:block;
+    width: 900px;
+    margin: 900px;
+}
+.texto{
+    margin: top 50px;
+}
+.texto h1{
+   margin-top: 0;
+    font-size: 50px;
+}
+.texto p{
+    margin: 20px 0;
+    color: black;
+    font-size: 14px;
+font-weight: bold;
+max-width: 800px;
+}
+
+.saiba{
+    border: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 4px 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.saiba:hover{
+    background:#884dc0 ;
+}
+
+.saiba:active{
+    background: bisque;
+    color: black;
+}
+
+.adicionais {
+    display: block;
+    position: relative;
+    right: -350px;
+    top: -40px
+}
+
+.adicionais img{
+    
+    width: 150px;
+    height: 150px;
+}
+
+#trufa{
+    width: 300px;
+    height: 250px;
+    position: relative;
+    top: 45px;
+}
+
+#cupcake1:hover{
+    -webkit-filter: drop-shadow(15px 7px 1px rgb(0,0,0));
+    filter:(15px 7px 1px rgb(0,0,0));
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+#cupcake2:hover{
+    -webkit-filter: drop-shadow(15px 7px 1px rgb(0,0,0));
+    filter:(15px 7px 1px rgb(0,0,0));
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+#trufa:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
